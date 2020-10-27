@@ -6,14 +6,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Gradient Background</title>
+        <title>Gradient Generator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body id='gradient'>
         <h1>Gradient Background Generator</h1>
-        <select class="gradientDirection" name="gradientDirection">
+        <div><select class="gradientDirection" name="gradientDirection">
             <option value="right">Right</option>
             <option value="left">Left</option>
             <option value="bottom right">Diagonal-Right</option>
@@ -24,11 +24,21 @@
         <input  class='color1' type="color" name="color1" value="#ff0000">
         <!-- <input oninput='setGradient()' class='color2' type="color" name="color2" value="#ff0000"> -->
         <input class='color2' type="color" name="color2" value="#ffff00">
+        </div>
         <h1>
             <input class='randomBG' type="button" id="button" name="randomBG" value="Random">
         </h1>
-        <h2>Current CSS Background</h2>
-        <h3></h3>
+        <div><h2>Current CSS Background</h2>
+        <input 
+        id="copy"
+        class="button2"
+        type="image"
+        src="./components/copy.png"
+        onclick="copyToClipboard()"
+      />
+    </div>
+        <h3 id='css'></h3>
+        
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

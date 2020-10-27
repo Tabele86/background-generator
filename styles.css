@@ -10,7 +10,7 @@ body {
 
 h1 {
 	font: 600 3.5em 'Raleway', sans-serif;
-	color: rgba(0, 0, 0, .5);
+	color: rgb(250, 250, 250);
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .5em;
@@ -19,7 +19,22 @@ h1 {
 
 h3 {
 	font: 900 1em 'Raleway', sans-serif;
-	color: rgba(0, 0, 0, .5);
+	color: rgb(250, 250, 250);
+	text-align: center;
+	text-transform: none;
+	letter-spacing: 0.01em;
+}
+
+.randomBG {
+	color: rgba(0, 0, 0);
+	text-align: center;
+	text-transform: none;
+	padding: 5%, 5%;
+	justify-content: center;
+}
+
+.gradientDirection {
+	color: rgb(0, 0, 0);
 	text-align: center;
 	text-transform: none;
 	letter-spacing: 0.01em;
